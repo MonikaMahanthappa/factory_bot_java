@@ -74,6 +74,7 @@ Requires a JDK 21 available to Gradle (the repo pins `.java-version` to `21.0` f
 
 All decisions were made in an explicit "diverge mode" discussion — captured, with timestamps, in:
 
+- [`docs/blogs/`](docs/blogs/) — engineering blog: process, architecture & patterns
 - [`docs/features.md`](docs/features.md) — running feature log (append-on-add)
 - [`docs/discussion-log.md`](docs/discussion-log.md) — the chronological research & Q&A flow
 - [`docs/decisions/`](docs/decisions/) — one ADR per major fork
