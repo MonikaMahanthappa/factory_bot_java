@@ -60,6 +60,7 @@ Map<String,Object> attrs = FactoryBot.attributesFor(UserFactory.class);
 |---|---|---|
 | `factory-bot-core` | ORM-agnostic engine: factories, attributes, sequences, traits, transient attrs, associations, callbacks, `build`/`buildStubbed`/`attributesFor`. | Datafaker only |
 | `factory-bot-spring-data-jpa` | Persistence adapter: the `create` strategy + Spring Boot auto-configuration that persists via JPA. | core + Spring Data JPA |
+| `examples/blog-app` | Example Spring Boot app whose tests use factory_bot_java across the pyramid ([README](examples/blog-app/README.md)). | the library (test scope) |
 
 ## Build & test
 

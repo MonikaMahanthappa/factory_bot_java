@@ -11,6 +11,21 @@ key source/test files. For a concept-by-concept map against Ruby factory_bot, se
 
 ---
 
+## 2026-07-20 — Example Spring Boot app (`examples/blog-app`)
+
+- **What:** A realistic full-stack Spring Boot blog app (authors → draft articles → publish → comments,
+  with real business rules) whose tests use factory_bot_java as the test-data factory across the pyramid.
+  Demonstrates the library from a consumer's perspective (`com.example.blog`). Not a library feature — an
+  end-to-end usage example that doubles as an integration test.
+- **Demonstrates:** sequences, dependent attributes, associations, traits, and `create`/`createList` with
+  typed overrides, at `@DataJpaTest`, `@SpringBootTest` (service), and MockMvc (web) layers.
+- **Module:** `examples/blog-app` — app under `src/main/java/com/example/blog/**`; factories under
+  `src/test/java/com/example/blog/factories/**`; Testcontainers base `support/AbstractPostgresTest`.
+- **Tests:** `ArticleRepositoryTest` (2), `ArticleServiceTest` (3), `ArticleControllerTest` (2) — Postgres
+  via Testcontainers. Runs locally on H2 via `bootRun`.
+
+---
+
 ## 2026-07-20 — Spring Data JPA `create` persistence
 
 - **What:** The `create` strategy persists built entities through a `PersistenceHandler` SPI backed by a
